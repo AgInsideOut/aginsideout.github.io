@@ -170,7 +170,6 @@ function Contact() {
                             <img
                             src="6154bb056a234edb1575564638641b63.jpg"
                             className="r9CsCb"
-                            role="img"
                             aria-label="Site home"
                             />
                         </a>
@@ -184,7 +183,6 @@ function Contact() {
                                 <a
                                     className="aJHbb dk90Ob hDrhEe HlqNPb"
                                     jsname="QwLHlb"
-                                    role="link"
                                     tabIndex={0}
                                     data-navtype={1}
                                     href="Home.html"
@@ -207,7 +205,6 @@ function Contact() {
                                 <a
                                     className="aJHbb dk90Ob hDrhEe HlqNPb"
                                     jsname="QwLHlb"
-                                    role="link"
                                     tabIndex={-1}
                                     data-navtype={1}
                                     href="Architectural%20Portfolio.html"
@@ -230,7 +227,6 @@ function Contact() {
                                 <a
                                     className="aJHbb dk90Ob hDrhEe HlqNPb"
                                     jsname="QwLHlb"
-                                    role="link"
                                     tabIndex={-1}
                                     data-navtype={1}
                                     href="Photography%20%20Sketches.html"
@@ -256,10 +252,9 @@ function Contact() {
                                 <a
                                     className="aJHbb dk90Ob hDrhEe HlqNPb"
                                     jsname="QwLHlb"
-                                    role="link"
                                     tabIndex={-1}
                                     data-navtype={1}
-                                    aria-selected="true"
+                                    // aria-selected="true"
                                     href="Contact.html"
                                     data-url="Contact.html"
                                     data-type={1}
@@ -280,7 +275,6 @@ function Contact() {
                                 <img
                                 src="6154bb056a234edb1575564638641b63.jpg"
                                 className="lzy1Td"
-                                role="img"
                                 aria-label="Site home"
                                 jsname="SwcDWb"
                                 />
@@ -313,7 +307,6 @@ function Contact() {
                                         jscontroller="yUHiM"
                                         jsaction="rcuQ6b:WYd;"
                                         jsname="QwLHlb"
-                                        role="link"
                                         tabIndex={0}
                                         data-navtype={1}
                                         href="Home.html"
@@ -343,7 +336,6 @@ function Contact() {
                                         jscontroller="yUHiM"
                                         jsaction="rcuQ6b:WYd;"
                                         jsname="QwLHlb"
-                                        role="link"
                                         tabIndex={-1}
                                         data-navtype={1}
                                         href="Architectural%20Portfolio.html"
@@ -373,7 +365,6 @@ function Contact() {
                                         jscontroller="yUHiM"
                                         jsaction="rcuQ6b:WYd;"
                                         jsname="QwLHlb"
-                                        role="link"
                                         tabIndex={-1}
                                         data-navtype={1}
                                         href="Photography%20%20Sketches.html"
@@ -406,10 +397,9 @@ function Contact() {
                                         jscontroller="yUHiM"
                                         jsaction="rcuQ6b:WYd;"
                                         jsname="QwLHlb"
-                                        role="link"
                                         tabIndex={-1}
                                         data-navtype={1}
-                                        aria-selected="true"
+                                        // aria-selected="true"
                                         href="Contact.html"
                                         data-url="Contact.html"
                                         data-type={1}
@@ -439,7 +429,6 @@ function Contact() {
                                         jscontroller="yUHiM"
                                         jsaction="rcuQ6b:WYd;"
                                         jsname="QwLHlb"
-                                        role="link"
                                         tabIndex={-1}
                                         data-navtype={1}
                                         aria-expanded="false"
@@ -505,7 +494,6 @@ function Contact() {
                                             jscontroller="yUHiM"
                                             jsaction="rcuQ6b:WYd;"
                                             jsname="QwLHlb"
-                                            role="link"
                                             tabIndex={-1}
                                             data-navtype={1}
                                             href="Home.html"
@@ -536,7 +524,6 @@ function Contact() {
                                             jscontroller="yUHiM"
                                             jsaction="rcuQ6b:WYd;"
                                             jsname="QwLHlb"
-                                            role="link"
                                             tabIndex={-1}
                                             data-navtype={1}
                                             href="Architectural%20Portfolio.html"
@@ -567,7 +554,6 @@ function Contact() {
                                             jscontroller="yUHiM"
                                             jsaction="rcuQ6b:WYd;"
                                             jsname="QwLHlb"
-                                            role="link"
                                             tabIndex={-1}
                                             data-navtype={1}
                                             href="Photography%20%20Sketches.html"
@@ -601,10 +587,9 @@ function Contact() {
                                             jscontroller="yUHiM"
                                             jsaction="rcuQ6b:WYd;"
                                             jsname="QwLHlb"
-                                            role="link"
                                             tabIndex={-1}
                                             data-navtype={1}
-                                            aria-selected="true"
+                                            // aria-selected="true"
                                             href="Contact.html"
                                             data-url="Contact.html"
                                             data-type={1}
@@ -683,7 +668,10 @@ function Contact() {
         <div class="elfsight-app-03be547d-286f-40d6-b5a2-b52008dcddb6"></div>'
                                                 jsaction="rcuQ6b:rcuQ6b;"
                                                 >
-                                                <iframe className="pxjVId" />
+                                                <iframe 
+                                                    className="pxjVId" 
+                                                    title= "External content"
+                                                />
                                                 </div>
                                             </div>
                                             </div>
@@ -741,6 +729,7 @@ function Contact() {
                                             <a
                                             href="https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fagnieszka-thiel-8a5b02206%2F&sa=D&sntz=1&usg=AOvVaw0LEGGx8lhv0Npv07WipkWp"
                                             target="_blank"
+                                            rel= "noreferrer"
                                             className="RNpQXe"
                                             style={{
                                                 width: 32,

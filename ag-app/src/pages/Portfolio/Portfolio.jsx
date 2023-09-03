@@ -169,7 +169,6 @@ function Portfolio(){
                             <img
                             src="6154bb056a234edb1575564638641b63.jpg"
                             className="r9CsCb"
-                            role="img"
                             aria-label="Site home"
                             />
                         </a>
@@ -183,7 +182,6 @@ function Portfolio(){
                                 <a
                                     className="aJHbb dk90Ob hDrhEe HlqNPb"
                                     jsname="QwLHlb"
-                                    role="link"
                                     tabIndex={0}
                                     data-navtype={1}
                                     href="Home.html"
@@ -209,10 +207,9 @@ function Portfolio(){
                                 <a
                                     className="aJHbb dk90Ob hDrhEe HlqNPb"
                                     jsname="QwLHlb"
-                                    role="link"
                                     tabIndex={-1}
                                     data-navtype={1}
-                                    aria-selected="true"
+                                    // aria-selected="true"
                                     href="Architectural%20Portfolio.html"
                                     data-url="Architectural%20Portfolio.html"
                                     data-type={1}
@@ -233,7 +230,6 @@ function Portfolio(){
                                 <a
                                     className="aJHbb dk90Ob hDrhEe HlqNPb"
                                     jsname="QwLHlb"
-                                    role="link"
                                     tabIndex={-1}
                                     data-navtype={1}
                                     href="Photography%20%20Sketches.html"
@@ -256,7 +252,6 @@ function Portfolio(){
                                 <a
                                     className="aJHbb dk90Ob hDrhEe HlqNPb"
                                     jsname="QwLHlb"
-                                    role="link"
                                     tabIndex={-1}
                                     data-navtype={1}
                                     href="Contact.html"
@@ -279,7 +274,6 @@ function Portfolio(){
                                 <img
                                 src="6154bb056a234edb1575564638641b63.jpg"
                                 className="lzy1Td"
-                                role="img"
                                 aria-label="Site home"
                                 jsname="SwcDWb"
                                 />
@@ -312,7 +306,6 @@ function Portfolio(){
                                         jscontroller="yUHiM"
                                         jsaction="rcuQ6b:WYd;"
                                         jsname="QwLHlb"
-                                        role="link"
                                         tabIndex={0}
                                         data-navtype={1}
                                         href="Home.html"
@@ -345,10 +338,9 @@ function Portfolio(){
                                         jscontroller="yUHiM"
                                         jsaction="rcuQ6b:WYd;"
                                         jsname="QwLHlb"
-                                        role="link"
                                         tabIndex={-1}
                                         data-navtype={1}
-                                        aria-selected="true"
+                                        // aria-selected="true"
                                         href="Architectural%20Portfolio.html"
                                         data-url="Architectural%20Portfolio.html"
                                         data-type={1}
@@ -376,7 +368,6 @@ function Portfolio(){
                                         jscontroller="yUHiM"
                                         jsaction="rcuQ6b:WYd;"
                                         jsname="QwLHlb"
-                                        role="link"
                                         tabIndex={-1}
                                         data-navtype={1}
                                         href="Photography%20%20Sketches.html"
@@ -406,7 +397,6 @@ function Portfolio(){
                                         jscontroller="yUHiM"
                                         jsaction="rcuQ6b:WYd;"
                                         jsname="QwLHlb"
-                                        role="link"
                                         tabIndex={-1}
                                         data-navtype={1}
                                         href="Contact.html"
@@ -438,7 +428,6 @@ function Portfolio(){
                                         jscontroller="yUHiM"
                                         jsaction="rcuQ6b:WYd;"
                                         jsname="QwLHlb"
-                                        role="link"
                                         tabIndex={-1}
                                         data-navtype={1}
                                         aria-expanded="false"
@@ -504,7 +493,6 @@ function Portfolio(){
                                             jscontroller="yUHiM"
                                             jsaction="rcuQ6b:WYd;"
                                             jsname="QwLHlb"
-                                            role="link"
                                             tabIndex={-1}
                                             data-navtype={1}
                                             href="Home.html"
@@ -538,10 +526,9 @@ function Portfolio(){
                                             jscontroller="yUHiM"
                                             jsaction="rcuQ6b:WYd;"
                                             jsname="QwLHlb"
-                                            role="link"
                                             tabIndex={-1}
                                             data-navtype={1}
-                                            aria-selected="true"
+                                            // aria-selected="true"
                                             href="Architectural%20Portfolio.html"
                                             data-url="Architectural%20Portfolio.html"
                                             data-type={1}
@@ -570,7 +557,6 @@ function Portfolio(){
                                             jscontroller="yUHiM"
                                             jsaction="rcuQ6b:WYd;"
                                             jsname="QwLHlb"
-                                            role="link"
                                             tabIndex={-1}
                                             data-navtype={1}
                                             href="Photography%20%20Sketches.html"
@@ -601,7 +587,6 @@ function Portfolio(){
                                             jscontroller="yUHiM"
                                             jsaction="rcuQ6b:WYd;"
                                             jsname="QwLHlb"
-                                            role="link"
                                             tabIndex={-1}
                                             data-navtype={1}
                                             href="Contact.html"
@@ -671,7 +656,11 @@ function Portfolio(){
                                                 data-code='<iframe src="https://publuu.com/flip-book/199076/482191/page/1?embed&transparent" width="100%" height="700" scrolling="no" frameborder="0" allowfullscreen="true" class="publuuflip"></iframe>'
                                                 jsaction="rcuQ6b:rcuQ6b;"
                                                 >
-                                                <iframe className="pxjVId" />
+                                                <iframe
+                                                    className="pxjVId"
+                                                    title="External content"
+                                                    // src="https://www.example.com/video"
+                                                ></iframe>
                                                 </div>
                                             </div>
                                             </div>

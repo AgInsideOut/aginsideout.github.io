@@ -169,7 +169,6 @@ function Photography(){
                             <img
                             src="6154bb056a234edb1575564638641b63.jpg"
                             className="r9CsCb"
-                            role="img"
                             aria-label="Site home"
                             />
                         </a>
@@ -183,7 +182,6 @@ function Photography(){
                                 <a
                                     className="aJHbb dk90Ob hDrhEe HlqNPb"
                                     jsname="QwLHlb"
-                                    role="link"
                                     tabIndex={0}
                                     data-navtype={1}
                                     href="Home.html"
@@ -206,7 +204,6 @@ function Photography(){
                                 <a
                                     className="aJHbb dk90Ob hDrhEe HlqNPb"
                                     jsname="QwLHlb"
-                                    role="link"
                                     tabIndex={-1}
                                     data-navtype={1}
                                     href="Architectural%20Portfolio.html"
@@ -232,10 +229,9 @@ function Photography(){
                                 <a
                                     className="aJHbb dk90Ob hDrhEe HlqNPb"
                                     jsname="QwLHlb"
-                                    role="link"
                                     tabIndex={-1}
                                     data-navtype={1}
-                                    aria-selected="true"
+                                    // aria-selected="true"
                                     href="Photography%20%20Sketches.html"
                                     data-url="Photography%20%20Sketches.html"
                                     data-type={1}
@@ -256,7 +252,6 @@ function Photography(){
                                 <a
                                     className="aJHbb dk90Ob hDrhEe HlqNPb"
                                     jsname="QwLHlb"
-                                    role="link"
                                     tabIndex={-1}
                                     data-navtype={1}
                                     href="Contact.html"
@@ -279,7 +274,6 @@ function Photography(){
                                 <img
                                 src="6154bb056a234edb1575564638641b63.jpg"
                                 className="lzy1Td"
-                                role="img"
                                 aria-label="Site home"
                                 jsname="SwcDWb"
                                 />
@@ -312,7 +306,6 @@ function Photography(){
                                         jscontroller="yUHiM"
                                         jsaction="rcuQ6b:WYd;"
                                         jsname="QwLHlb"
-                                        role="link"
                                         tabIndex={0}
                                         data-navtype={1}
                                         href="Home.html"
@@ -342,7 +335,6 @@ function Photography(){
                                         jscontroller="yUHiM"
                                         jsaction="rcuQ6b:WYd;"
                                         jsname="QwLHlb"
-                                        role="link"
                                         tabIndex={-1}
                                         data-navtype={1}
                                         href="Architectural%20Portfolio.html"
@@ -375,10 +367,9 @@ function Photography(){
                                         jscontroller="yUHiM"
                                         jsaction="rcuQ6b:WYd;"
                                         jsname="QwLHlb"
-                                        role="link"
                                         tabIndex={-1}
                                         data-navtype={1}
-                                        aria-selected="true"
+                                        // aria-selected="true"
                                         href="Photography%20%20Sketches.html"
                                         data-url="Photography%20%20Sketches.html"
                                         data-type={1}
@@ -406,7 +397,6 @@ function Photography(){
                                         jscontroller="yUHiM"
                                         jsaction="rcuQ6b:WYd;"
                                         jsname="QwLHlb"
-                                        role="link"
                                         tabIndex={-1}
                                         data-navtype={1}
                                         href="Contact.html"
@@ -438,7 +428,6 @@ function Photography(){
                                         jscontroller="yUHiM"
                                         jsaction="rcuQ6b:WYd;"
                                         jsname="QwLHlb"
-                                        role="link"
                                         tabIndex={-1}
                                         data-navtype={1}
                                         aria-expanded="false"
@@ -504,7 +493,6 @@ function Photography(){
                                             jscontroller="yUHiM"
                                             jsaction="rcuQ6b:WYd;"
                                             jsname="QwLHlb"
-                                            role="link"
                                             tabIndex={-1}
                                             data-navtype={1}
                                             href="Home.html"
@@ -535,7 +523,6 @@ function Photography(){
                                             jscontroller="yUHiM"
                                             jsaction="rcuQ6b:WYd;"
                                             jsname="QwLHlb"
-                                            role="link"
                                             tabIndex={-1}
                                             data-navtype={1}
                                             href="Architectural%20Portfolio.html"
@@ -569,10 +556,9 @@ function Photography(){
                                             jscontroller="yUHiM"
                                             jsaction="rcuQ6b:WYd;"
                                             jsname="QwLHlb"
-                                            role="link"
                                             tabIndex={-1}
                                             data-navtype={1}
-                                            aria-selected="true"
+                                            // aria-selected="true"
                                             href="Photography%20%20Sketches.html"
                                             data-url="Photography%20%20Sketches.html"
                                             data-type={1}
@@ -601,7 +587,6 @@ function Photography(){
                                             jscontroller="yUHiM"
                                             jsaction="rcuQ6b:WYd;"
                                             jsname="QwLHlb"
-                                            role="link"
                                             tabIndex={-1}
                                             data-navtype={1}
                                             href="Contact.html"
@@ -672,7 +657,10 @@ function Photography(){
         <div class="elfsight-app-a76db10c-897c-46a3-a5ee-937412ec6d27"></div>'
                                                 jsaction="rcuQ6b:rcuQ6b;"
                                                 >
-                                                <iframe className="pxjVId" />
+                                                <iframe 
+                                                    className="pxjVId" 
+                                                    title="External content"
+                                                />
                                                 </div>
                                             </div>
                                             </div>
