@@ -1,5 +1,5 @@
 {
-  "name": "ag-app",
+  "name": "site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,7 +20,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://aginsideout.github.io/",
+  "homepage": "https://aginsideout.github.io/site",
   "eslintConfig": {
     "extends": [
       "react-app",
