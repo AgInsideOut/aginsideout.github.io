@@ -11,16 +11,16 @@ function App() {
   return (
     <div className="App">
       <Router>
-          <Header />
-          <div className="content">
-            <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route exact path="/portfolio" element={<Portfolio />} />
-              <Route exact path="/photogrphy" element={<Photogrphy />} />
-              <Route exact path="/contact" element={<Contact />} />
-            </Routes>
-          </div>
-        </Router>
+        <Header />
+        <div className="content">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/portfolio" element={<Portfolio />} />
+            <Route exact path="/photogrphy" element={<Photogrphy />} />
+            <Route exact path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+      </Router>
     </div>
   );
 }
