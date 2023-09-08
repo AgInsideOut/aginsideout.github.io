@@ -20,7 +20,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://aginsideout.github.io/",
+  "homepage": "https://aginsideout.github.io/build",
   "eslintConfig": {
     "extends": [
       "react-app",
