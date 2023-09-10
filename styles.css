@@ -89,7 +89,7 @@ ul, ol, li {
   text-transform: uppercase;
   margin: 0;
 }
-.header__copy, .header__tagline, .header__copy--lighter {
+.header__copy, .header__tagline, .header__copy--lighter, .header__copy--bold {
   width: 27%;
   font-family: "Overpass", Arial, Helvetica, sans-serif;
   font-size: 26px;
@@ -98,6 +98,9 @@ ul, ol, li {
   font-weight: lighter;
   font-size: 15px;
   line-height: 2 !important;
+}
+.header__copy--bold {
+  font-weight: bold;
 }
 .header__copy, .header__copy--lighter {
   margin: 0 0 90px;
