@@ -1,7 +1,7 @@
 // Stworzenie tablicy ścieżek do obrazów
 const imagePaths = [];
 
-for (let i = 1; i <= 23; i++) {
+for (let i = 1; i <= 28; i++) {
     imagePaths.push(`./images/image${i}.jpg`);
 }
 
