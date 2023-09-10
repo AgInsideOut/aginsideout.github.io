@@ -1,43 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+    <title>AGNIESZKA THIEL</title>
+</head>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<body>
+    <div class="nav">
+        <ul class="nav__pages-list">
+            <li class="nav__pages-list-item">
+                <a class="nav__pages-link" href="/">HOME</a>
+            </li>
+            <li class="nav__pages-list-item">
+                <a class="nav__pages-link" href="#nav-footer">CONTACT</a>
+            </li>
+        </ul>
+        <a class="nav__logo" href="#">
+            <img class="nav__logo-img" src="./assets/logo.jpg" alt="Website Logo / Home Link">
+        </a>
+        <ul class="nav__sections-list">
+            <li class="nav__sections-list-item">
+                <a class="nav__sections-link" href="#portfolio">ARCHITECTURE</a>
+            </li>
+            <li class="nav__sections-list-item">
+                <a class="nav__sections-link" href="#graphics">GRAPHICS</a>
+            </li>
+        </ul>
+    </div>
+    
+    <header class="header">
+        <div class="header__container">
+            <p class="header__copy">
+                AGNIESZKA <span class="header__copy--bold">THIEL</span>
+            </p>
+            <div class="tagline">
+                <p class="header__copy--lighter">"When we speak of man and space, it sounds as though man stood on one side, 
+                    space on the other. Yet space is not something that faces man. It is neither 
+                    an external object nor an inner experience. It is not that there are men, and 
+                    over and above them space, for when I say a man (...), I already name the stay 
+                    within the fourfold among things." <br><br><span>- M. Heidegger</span></p>
+            </div>
+        </div>
+    </header>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <main>
+        <section id="portfolio" class="portfolio">
+            <div class="flipbook" id="flipbook">
+                <!-- Pages dynamically generated using JavaScript -->
+            </div>
+        </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+        <section id="graphics" class="graphics">
+            <div class="carousel-container">
+                <div class="carousel-slides">
+                    <div class="carousel-slide">
+                    <!-- Images dynamically generated using JavaScript -->
+                    </div>
+                </div>
+            </div>              
+            <div class="carousel-controls">
+                <button class="carousel-button prev"></button>
+                <button class="carousel-button next"></button>
+            </div>
+        </section>                
+    </main>
+
+    <footer id="nav-footer">
+        <nav class="nav-footer">
+            <ul class="nav-footer__list">
+                <li class="nav-footer__list-item">
+                    <a class="nav-footer__link" href="mailto:ag.thiel.arc@gmail.com">
+                        <img class="nav-footer__logo--small" src="./assets/mail.png" alt="Mail Logo / Link to Mail">
+                    </a>
+                    <a class="nav-footer__link" href="https://www.linkedin.com/in/agnieszka-thiel/">
+                        <img class="nav-footer__logo--small" src="./assets/in.jpg" alt="LinkedIn Logo / Link to LinkedIn">
+                    </a>
+                </li>
+                <li class="nav-footer__list-item">
+                    <a class="nav-footer__link" href="./index.html">
+                        <img class="nav-footer__logo" src="./assets/logo.jpg" alt="Website Logo / Link to Home">
+                    </a>
+                </li>
+                <li class="nav-footer__list-item">
+                    <div class="nav-footer__social-icons">
+                        <a class="nav-footer__link" href="https://www.codewars.com/users/AgInsideOut">
+                            <img class="nav-footer__logo--small" src="./assets/link.png" alt="Link Logo / Link to Codewars">
+                        </a>
+                        <a class="nav-footer__link" href="https://github.com/AgInsideOut">
+                            <img class="nav-footer__logo--small" src="./assets/github.png" alt="GitHub Logo / Link to GitHub">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </footer>   
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js">const $j = jQuery.noConflict();</script> 
+    <script type="text/javascript" src="./turn.js-master/turn.min.js"></script>
+    <script type="text/javascript" src="./flipbook.js"></script>
+    <script type="text/javascript" src="./carousel.js"></script>
+</body>
 </html>
