@@ -1,48 +1,48 @@
-// Stworzenie tablicy ścieżek do obrazów
+// Creation of an image path table
 const imagePaths = [];
 
-for (let i = 1; i <= 28; i++) {
+for (let i = 1; i <= 18; i++) {
     imagePaths.push(`./images/image${i}.jpg`);
 }
 
-// Znalezienie elementów w DOM
+// Finding elements in the DOM
 const carousel = document.querySelector('.carousel-container');
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
 let currentIndex = 0;
 
-// Funkcja obsługująca poprzedni slajd
+// Previous slide function
 function prevSlide() {
-    // Pobierz wszystkie slajdy
+    // Download all slides
     const slides = document.querySelectorAll('.carousel-slide');
 
-    // Ukryj aktualny slajd
+    // Hide current slide
     slides[currentIndex].classList.add('hidden');
     currentIndex = (currentIndex - 1 + imagePaths.length) % imagePaths.length;
-    // Wyświetl nowy slajd
+    // View new slide
     slides[currentIndex].classList.remove('hidden');
 }
 
-// Funkcja obsługująca następny slajd
+// Next slide function
 function nextSlide() {
-    // Pobierz wszystkie slajdy
+    // Download all slides
     const slides = document.querySelectorAll('.carousel-slide');
 
-    // Ukryj aktualny slajd
+    // Hide current slide
     slides[currentIndex].classList.add('hidden');
     currentIndex = (currentIndex + 1) % imagePaths.length;
-    // Wyświetl nowy slajd
+    // View new slide
     slides[currentIndex].classList.remove('hidden');
 }
 
-// Dodanie obsługi kliknięć przycisków
+// Adding support for button clicks
 prevBtn.addEventListener('click', prevSlide);
 nextBtn.addEventListener('click', nextSlide);
 
-// Dodanie obrazów do karuzeli
+// Adding images to the carousel
 imagePaths.forEach((path) => {
     const slide = document.createElement('div');
-    slide.className = 'carousel-slide hidden'; // Dodaj klasę 'hidden' na początku
+    slide.className = 'carousel-slide hidden';
     const img = document.createElement('img');
     img.src = path;
     img.alt = 'Image';
@@ -50,5 +50,5 @@ imagePaths.forEach((path) => {
     carousel.appendChild(slide);
 });
 
-// Wyświetlenie pierwszego slajdu
+// Displaying the first slide
 document.querySelector('.carousel-slide').classList.remove('hidden');
