@@ -1,4 +1,4 @@
-// Creation of an image path table
+// Image path table
 const imagePaths = [];
 
 for (let i = 1; i <= 18; i++) {
