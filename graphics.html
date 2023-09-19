@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+    <title>AGNIESZKA THIEL</title>
+</head>
+
+<body>
+    <div class="nav">
+        <ul class="nav__pages-list">
+            <li class="nav__pages-list-item">
+                <a class="nav__pages-link" href="/">HOME</a>
+            </li>
+            <li class="nav__pages-list-item">
+                <a class="nav__pages-link" href="coding.html">CODING</a>
+            </li>
+        </ul>
+        <a class="nav__logo" href="#">
+            <img class="nav__logo-img" src="./assets/logo.jpg" alt="Website Logo / Home Link">
+        </a>
+        <ul class="nav__sections-list">
+            <li class="nav__sections-list-item">
+                <a class="nav__sections-link" href="#portfolio">ARCHITECTURE</a>
+            </li>
+            <li class="nav__sections-list-item">
+                <a class="nav__sections-link" href="graphics.html">GRAPHICS</a>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+
+        <section id="graphics" class="graphics">
+            <div class="carousel-container">
+                <div class="carousel-slides">
+                    <div class="carousel-slide">
+                    <!-- Images dynamically generated using JavaScript -->
+                    </div>
+                </div>
+            </div>              
+            <div class="carousel-controls">
+                <button class="carousel-button prev"></button>
+                <button class="carousel-button next"></button>
+            </div>
+        </section>                
+    </main>
+
+    <footer id="nav-footer">
+        <nav class="nav-footer">
+            <ul class="nav-footer__list">
+                <li class="nav-footer__list-item">
+                    <a class="nav-footer__link" href="mailto:ag.thiel.arc@gmail.com">
+                        <img class="nav-footer__logo--small" src="./assets/mail.png" alt="Mail Logo / Link to Mail">
+                    </a>
+                    <a class="nav-footer__link" href="https://www.linkedin.com/in/agnieszka-thiel/">
+                        <img class="nav-footer__logo--small" src="./assets/in.jpg" alt="LinkedIn Logo / Link to LinkedIn">
+                    </a>
+                </li>
+                <li class="nav-footer__list-item">
+                    <a class="nav-footer__link" href="./index.html">
+                        <img class="nav-footer__logo" src="./assets/logo.jpg" alt="Website Logo / Link to Home">
+                    </a>
+                </li>
+                <li class="nav-footer__list-item">
+                    <div class="nav-footer__social-icons">
+                        <a class="nav-footer__link" href="https://www.codewars.com/users/AgInsideOut">
+                            <img class="nav-footer__logo--small" src="./assets/link.png" alt="Link Logo / Link to Codewars">
+                        </a>
+                        <a class="nav-footer__link" href="https://github.com/AgInsideOut">
+                            <img class="nav-footer__logo--small" src="./assets/github.png" alt="GitHub Logo / Link to GitHub">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </footer>   
+    <script type="text/javascript" src="./carousel.js"></script>
+</body>
+</html>
