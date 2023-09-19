@@ -16,6 +16,10 @@ ul, ol, li {
   font-family: "Overpass", Arial, Helvetica, sans-serif;
   font-size: 19px;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 /* CSS for the Navbar */
 .nav a, .nav-footer a, .nav p, .nav-footer p {
   font-size: 12px;
@@ -192,6 +196,29 @@ ul, ol, li {
 }
 .next {
   background-image: url('./assets/next-arrow.png');
+}
+/* CSS for the coding Section */
+.coding {
+  padding: 0 5%;
+  background: #E7E6E5;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+/* Center-align videos within the video-container */
+.video-container {
+  text-align: center;
+}
+.custom-video {
+  width: 50%;
+  height: auto;
+  display: inline-block; /* Dodaj display: inline-block */
+}
+.coding h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.coding h5 {
+  margin-top: 20px;
 }
 /* CSS for the Footer */
 .nav-footer {
