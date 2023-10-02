@@ -1,0 +1,176 @@
+/* Basic CSS styling */
+/* @import url(https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&family=Overpass:wght@400;700&display=swap); */
+@font-face {
+	font-family: 'fontawesome';
+	src:url('../fonts/fontawesome/fontawesome.eot?-v92fkb');
+	src:url('../fonts/fontawesome/fontawesome.eot?#iefix-v92fkb') format('embedded-opentype'),
+		url('../fonts/fontawesome/fontawesome.woff?-v92fkb') format('woff'),
+		url('../fonts/fontawesome/fontawesome.ttf?-v92fkb') format('truetype'),
+		url('../fonts/fontawesome/fontawesome.svg?-v92fkb#fontawesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@media screen and (max-width: 1000px) {
+	.grid figure,
+	.grid .placeholder {
+		width: 240px;
+		height: 212px;
+	}
+}
+@media screen and (min-width: 55em) {
+	.codrops-header {
+		grid-area: header;
+		justify-self: end;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		align-items: center;
+		text-align: left;
+	}
+}
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+body {
+	--color-text: #000000;
+    --color-bg: #ffffff;
+    --color-link: #7c7c7c;
+    --color-link-hover: #000000;
+    --color-info: #272526;
+    --grid-item-bg: #f1f1f1;
+    --color-close: #000000;
+	font-family: Futura, "futura-pt", sans-serif;
+	min-height: 100vh;
+	color: #7c7c7c;
+	color: var(--color-text);
+	background-color: #ffffff;
+	background-color: var(--color-bg);
+	position: relative;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	position: relative;
+}
+main{
+	margin-top: -1%;
+}
+.main-portfolio {
+	margin-top: +4%;
+}
+p {
+	font-size: 26px;
+	margin: 0;
+}
+ul, ol, li {
+	font-size: 19px;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+/* CSS for the Header */
+.header {
+	padding: 0 5%;
+	background: url("../assets/image-back.png") 0% 50%/cover no-repeat;
+	height: calc(100vh - 80px);
+}
+.header__container {
+	padding: 0 5%;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+}
+.header__title {
+	font-family: Futura, "futura-pt", sans-serif;
+	font-size: 36px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 0;
+}
+.header__copy, .header__tagline, .header__copy--lighter, .header__copy--bold {
+	width: 50%;
+	font-family: Futura, "futura-pt", sans-serif;
+	font-size: 20px;
+	margin: 0 10%;
+	text-align: justify;
+}
+.header__copy--lighter {
+	font-weight: lighter;
+	font-size: 15px;
+	line-height: 1.6 !important;
+}
+.header__copy--bold {
+	font-weight: bold;
+}
+.header__copy, .header__copy--lighter {
+	margin: 0 0 50px;
+}
+.header__tagline {
+	margin: 0;
+}
+.tagline {
+	font-weight: lighter;
+	font-size: 18px !important;
+	line-height: 1.25 !important;
+}
+.tagline p {
+    margin: 0;
+}
+.tagline span {
+	display: block;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+mark {
+	-webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
+			animation: 1.5s highlight 1.5s 1 normal forwards;
+	background-color: none;
+	background: linear-gradient(90deg, #8b7eff 50%, rgba(255, 255, 255, 0) 50%);
+	background-size: 200% 100%;
+	background-position: 100% 0;
+}
+@-webkit-keyframes highlight {
+	to {
+		background-position: 0 0;
+	}
+}
+@keyframes highlight {
+	to {
+		background-position: 0 0;
+	}
+}
+/* CSS for the Portfolio Page */
+.portfolio {
+    padding: 5% 5% 5%;
+    background: #ffffff;
+    height: 752px;
+    overflow: auto;
+}
+
+#flipbook {
+    width: 1152px;
+    height: 120%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#flipbook .turn-page {
+    background-color: #ccc;
+    background-size: 100% 100%;
+}

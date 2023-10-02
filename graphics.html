@@ -1,89 +1,511 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="../favicon_io/site.webmanifest">
-    <title>AGNIESZKA THIEL</title>
-</head>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>AGNIESZKA THIEL</title>
+        <meta name="description" content="Agnieszka Thiel | Portfolio" />
+		<meta name="keywords" content="portfolio, graphics, architecture, coding" />
+		<meta name="author" content="AT" />
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="../favicon_io/site.webmanifest">
+    
+                
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/graphics.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
-<body>
-    <div class="nav">
-        <ul class="nav__pages-list">
-            <li class="nav__pages-list-item">
-                <a class="nav__pages-link" href="/">HOME</a>
-            </li>
-            <li class="nav__pages-list-item">
-                <a class="nav__pages-link" href="coding.html">CODING</a>
-            </li>
-        </ul>
-        <a class="nav__logo" href="#">
-            <img class="nav__logo-img" src="./assets/logo.jpg" alt="Website Logo / Home Link">
-        </a>
-        <ul class="nav__sections-list">
-            <li class="nav__sections-list-item">
-                <a class="nav__sections-link" href="architecture.html">ARCHITECTURE</a>
-            </li>
-            <li class="nav__sections-list-item">
-                <a class="nav__sections-link" href="graphics.html">GRAPHICS</a>
-            </li>
-        </ul>
-    </div>
+        <link rel="stylesheet" type="text/css" href="css/navbar.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+        <script src="js/graphics/modernizr.custom.js"></script>
+    </head>
 
-    <main>
-
-        <section id="graphics" class="graphics">
-            <div class="carousel-container">
-                <div class="carousel-slides">
-                    <div class="carousel-slide">
-                    <!-- Images dynamically generated using JavaScript -->
-                    </div>
-                </div>
-            </div>              
-            <div class="carousel-controls">
-                <button class="carousel-button prev"></button>
-                <button class="carousel-button next"></button>
-            </div>
-        </section>                
-    </main>
-
-    <footer id="nav-footer">
-        <nav class="nav-footer">
-            <ul class="nav-footer__list">
-                <li class="nav-footer__list-item">
-                    <a class="nav-footer__link" href="mailto:ag.thiel.arc@gmail.com">
-                        <img class="nav-footer__logo--small" src="./assets/mail.png" alt="Mail Logo / Link to Mail">
-                    </a>
-                    <a class="nav-footer__link" href="https://www.linkedin.com/in/agnieszka-thiel/">
-                        <img class="nav-footer__logo--small" src="./assets/in.jpg" alt="LinkedIn Logo / Link to LinkedIn">
-                    </a>
-                </li>
-                <li class="nav-footer__list-item">
-                    <a class="nav-footer__link" href="./index.html">
-                        <img class="nav-footer__logo" src="./assets/logo.jpg" alt="Website Logo / Link to Home">
-                    </a>
-                </li>
-                <li class="nav-footer__list-item">
-                    <div class="nav-footer__social-icons">
-                        <a class="nav-footer__link" href="https://www.codewars.com/users/AgInsideOut">
-                            <img class="nav-footer__logo--small" src="./assets/link.png" alt="Link Logo / Link to Codewars">
+    <body>
+        <div class="container">
+            
+            <header class="codrops-header">
+                    <nav class="nav">
+                        <ul class="nav__pages-list">
+                            <li class="nav__pages-list-item">
+                                <a class="nav__pages-link" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav__pages-list-item">
+                                <a class="nav__pages-link" href="devworks.html">DEVWORKS</a>
+                            </li>
+                        </ul>
+                        <a class="nav__logo" href="#">
+                            <img class="nav__logo-img" href="index.html" src="./assets/logo.jpg" alt="Website Logo / Home Link">
                         </a>
-                        <a class="nav-footer__link" href="https://github.com/AgInsideOut">
-                            <img class="nav-footer__logo--small" src="./assets/github.png" alt="GitHub Logo / Link to GitHub">
-                        </a>
+                        <ul class="nav__sections-list">
+                            <li class="nav__sections-list-item">
+                                <a class="nav__sections-link" href="architecture.html">ARCHITECTURE</a>
+                            </li>
+                            <li class="nav__sections-list-item">
+                                <a class="nav__sections-link" href="graphics.html">GRAPHICS</a>
+                            </li>
+                        </ul>
+
+                        <ul class="codrops-demos">
+                            <a href="#sketches">SKETCHES</a>
+                            <a href="#schemes">SCHEMES</a>
+                            <a href="#visualisations">VISUALISATIONS</a>
+                            <a href="#computational-design">COMPUTATIONAL DESIGN</a>
+                            <a href="#branding">BRANDING</a>
+                            <a href="#social-media">SOCIAL MEDIA</a>
+                            <a href="#photography">PHOTOGRAPHY</a>
+                        </ul>
+                    </nav>
+            </header>
+
+            <main class="main-gallery">             
+                <section id="grid3d" class="grid3d vertical" >
+                    <!-- Section for 'Sketches' -->
+                    <section id="grid-wrap" class="grid-wrap ">
+                        <!-- Images for 'Sketches' -->
+                        <div class="grid">
+                            <figure data-index="0" data-section="sketches"><img src="images/image1.jpg" alt="img01"/></figure>
+                            <figure data-index="1" data-section="sketches"><img src="images/image2.jpg" alt="img02"/></figure>
+                            <figure data-index="2" data-section="sketches"><img src="images/image3.jpg" alt="img03"/></figure>
+                            <figure data-index="3" data-section="sketches"><img src="images/image4.jpg" alt="img04"/></figure>
+                            <figure data-index="4" data-section="sketches"><img src="images/image5.jpg" alt="img05"/></figure>
+                            <figure data-index="5" data-section="sketches"><img src="images/image6.jpg" alt="img06"/></figure>
+                            <figure data-index="6" data-section="sketches"><img src="images/image7.jpg" alt="img07"/></figure>
+                            <figure data-index="7" data-section="sketches"><img src="images/image8.jpg" alt="img08"/></figure>
+                            <figure data-index="8" data-section="sketches"><img src="images/image9.jpg" alt="img09"/></figure>
+
+                            <figure data-index="9" data-section="schemes"><img src="images/image21.jpg" alt="img21"/></figure>
+                            <figure data-index="10" data-section="schemes"><img src="images/image22.jpg" alt="img22"/></figure>
+                            <figure data-index="11" data-section="schemes"><img src="images/image23.jpg" alt="img23"/></figure>
+                            <figure data-index="12" data-section="schemes"><img src="images/image24.jpg" alt="img24"/></figure>
+                            <figure data-index="13" data-section="schemes"><img src="images/image25.jpg" alt="img25"/></figure>
+                            <figure data-index="14" data-section="schemes"><img src="images/image26.jpg" alt="img26"/></figure>
+                            <figure data-index="15" data-section="schemes"><img src="images/image27.jpg" alt="img27"/></figure>
+                            <figure data-index="16" data-section="schemes"><img src="images/image28.jpg" alt="img28"/></figure>
+                            <figure data-index="17" data-section="schemes"><img src="images/image29.jpg" alt="img29"/></figure>
+
+                            <figure data-index="18" data-section="visualisations"><img src="images/image31.jpg" alt="img31"/></figure>
+                            <figure data-index="19" data-section="visualisations"><img src="images/image32.jpg" alt="img32"/></figure>
+                            <figure data-index="20" data-section="visualisations"><img src="images/image33.jpg" alt="img33"/></figure>
+                            <figure data-index="21" data-section="visualisations"><img src="images/image34.jpg" alt="img34"/></figure>
+                            <figure data-index="22" data-section="visualisations"><img src="images/image35.jpg" alt="img35"/></figure>
+                            <figure data-index="23" data-section="visualisations"><img src="images/image36.jpg" alt="img36"/></figure>
+                            <figure data-index="24" data-section="visualisations"><img src="images/image37.jpg" alt="img37"/></figure>
+                            <figure data-index="25" data-section="visualisations"><img src="images/image38.jpg" alt="img38"/></figure>
+                            <figure data-index="26" data-section="visualisations"><img src="images/image39.jpg" alt="img39"/></figure>
+
+                            <figure data-index="27" data-section="computational-design"><img src="images/image41.jpg" alt="img41"/></figure>
+                            <figure data-index="28" data-section="computational-design"><img src="images/image42.jpg" alt="img42"/></figure>
+                            <figure data-index="29" data-section="computational-design"><img src="images/image43.jpg" alt="img43"/></figure>
+                            <figure data-index="30" data-section="computational-design"><img src="images/image44.jpg" alt="img44"/></figure>
+                            <figure data-index="31" data-section="computational-design"><img src="images/image45.jpg" alt="img45"/></figure>
+                            <figure data-index="32" data-section="computational-design"><img src="images/image46.jpg" alt="img46"/></figure>
+                            <figure data-index="33" data-section="computational-design"><img src="images/image47.jpg" alt="img47"/></figure>
+                            <figure data-index="34" data-section="computational-design"><img src="images/image48.jpg" alt="img48"/></figure>
+                            <figure data-index="35" data-section="computational-design"><img src="images/image49.jpg" alt="img49"/></figure>
+
+                            <figure data-index="36" data-section="branding"><img src="images/image51.jpg" alt="img51"/></figure>
+                            <figure data-index="37" data-section="branding"><img src="images/image52.jpg" alt="img52"/></figure>
+                            <figure data-index="38" data-section="branding"><img src="images/image53.jpg" alt="img53"/></figure>
+                            <figure data-index="39" data-section="branding"><img src="images/image54.jpg" alt="img54"/></figure>
+                            <figure data-index="40" data-section="branding"><img src="images/image55.jpg" alt="img55"/></figure>
+                            <figure data-index="41" data-section="branding"><img src="images/image56.jpg" alt="img56"/></figure>
+                            <figure data-index="42" data-section="branding"><img src="images/image57.jpg" alt="img57"/></figure>
+                            <figure data-index="43" data-section="branding"><img src="images/image58.jpg" alt="img58"/></figure>
+                            <figure data-index="44" data-section="branding"><img src="images/image59.jpg" alt="img59"/></figure>
+
+                            <br />
+
+                            <figure data-index="45" data-section="social-media"><img src="images/image61.gif" alt="img61"/></figure>
+                            <!-- <figure><img src="images/image62.gif" alt="img62"/></figure> -->
+                            <figure data-index="46" data-section="social-media"><img src="images/image63.gif" alt="img63"/></figure>
+                            <!-- <figure><img src="images/image64.gif" alt="img64"/></figure> -->
+                            <figure data-index="47" data-section="social-media"><img src="images/image65.gif" alt="img65"/></figure>
+                            <!-- <figure><img src="images/image66.gif" alt="img66"/></figure> -->
+                            <figure data-index="48" data-section="social-media"><img src="images/image67.gif" alt="img67"/></figure>
+                            <!-- <figure><img src="images/image68.gif" alt="img68"/></figure> -->
+                            <!-- <figure><img src="images/image69.gif" alt="img69"/></figure> -->
+
+                            <br />
+
+                            <figure data-index="49" data-section="photography"><img src="images/image71.jpg" alt="img71"/></figure>
+                            <figure data-index="50" data-section="photography"><img src="images/image72.jpg" alt="img72"/></figure>
+                            <figure data-index="51" data-section="photography"><img src="images/image73.jpg" alt="img73"/></figure>
+                            <figure data-index="52" data-section="photography"><img src="images/image74.jpg" alt="img74"/></figure>
+                            <figure data-index="53" data-section="photography"><img src="images/image75.jpg" alt="img75"/></figure>
+                            <figure data-index="54" data-section="photography"><img src="images/image76.jpg" alt="img76"/></figure>
+                            <figure data-index="55" data-section="photography"><img src="images/image77.jpg" alt="img77"/></figure>
+                            <figure data-index="56" data-section="photography"><img src="images/image78.jpg" alt="img78"/></figure>
+                            <figure data-index="57" data-section="photography"><img src="images/image79.jpg" alt="img79"/></figure>
+                        </div>
+                    </section>
+
+                    <div class="content">
+                        <!-- Sketches -->
+                        <div>
+                            <div class="gallery-img"><img src="images/image1.jpg" alt="img01"/></div>
+                            <h4 class="gallery-text">St Peter's Basilica, Rome</h4>
+                            <p class="gallery-text">Watercolour + Fineliner <span>Work done for a laboratory in architectural history, bachelor's degree.</span></p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image2.jpg" alt="img02"/></div>
+                            <h4 class="gallery-text">Kolegiacki Square, Poznań</h4>
+                            <p class="gallery-text">Watercolour + Fineliner <span>Work done in free time, bachelor's degree.</span></p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image3.jpg" alt="img03"/></div>
+                            <h4 class="gallery-text">Watercolour of a bedroom, author's design of a terraced house</h4>
+                            <p class="gallery-text">Watercolour + Fineliner <span>Work done for a design studio, bachelor's degree.</span></p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image4.jpg" alt="img04"/></div>
+                            <h4 class="gallery-text">Church of the Saviour, Warsaw</h4>
+                            <p class="gallery-text">Pencil crayon <span>Work done in free time.</span></p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image5.jpg" alt="img05"/></div>
+                            <h4 class="gallery-text">Church of the Nuns of the Visitation, Warsaw</h4>
+                            <p class="gallery-text">Pencil crayon <span>Work done in free time.</span></p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image6.jpg" alt="img06"/></div>
+                            <h4 class="gallery-text">The Basilica of the Fourteen Holy Helpers, Bavaria</h4>
+                            <p class="gallery-text">Pencil <span>Working as part of a baroque architecture study, drawing course.</span></p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image7.jpg" alt="img07"/></div>
+                            <h4 class="gallery-text">Calatrava's work inspiration</h4>
+                            <p class="gallery-text">Pencil<span>Inspired by the architecture of Santiago Calatrava, drawing course.</span></p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image8.jpg" alt="img08"/></div>
+                            <h4 class="gallery-text">Staircase study</h4>
+                            <p class="gallery-text">Pencil <span>Work produced as part of a drawing course.</span></p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image9.jpg" alt="img09"/></div>
+                            <h4 class="gallery-text">Still life</h4>
+                            <p class="gallery-text">Acrylic paint<span>Work produced as part of a painting class, bachelor's degree.</span></p>
+                        </div>
+
+                        <!-- Schemes -->
+                        <div>
+                            <div class="gallery-img"><img src="images/image21.jpg" alt="img21"/></div>
+                            <h4 class="gallery-text">Transition - the hall of residence, Warsaw</h4>
+                            <p class="gallery-text">Schematic made as part of the design of the author's dormitory made for the design studio course, master's degree.</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image22.jpg" alt="img22"/></div>
+                            <h4 class="gallery-text">Transition - the hall of residence, Warsaw</h4>
+                            <p class="gallery-text">Schematic made as part of the design of the author's dormitory made for the design studio course, master's degree.</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image23.jpg" alt="img23"/></div>
+                            <h4 class="gallery-text">Transition - the hall of residence, Warsaw</h4>
+                            <p class="gallery-text">Schematic made as part of the design of the author's dormitory made for the design studio course, master's degree.</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image24.jpg" alt="img24"/></div>
+                            <h4 class="gallery-text">Office project, Gorzów Wielkopolski</h4>
+                            <p class="gallery-text">Commercial work, scheme made for Kallan office for competition work</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image25.jpg" alt="img25"/></div>
+                            <h4 class="gallery-text">Office project, Gorzów Wielkopolski</h4>
+                            <p class="gallery-text">Commercial work, scheme made for Kallan office for competition work</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image26.jpg" alt="img26"/></div>
+                            <h4 class="gallery-text">Office project, Gorzów Wielkopolski</h4>
+                            <p class="gallery-text">Commercial work, scheme made for Kallan office for competition work</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image27.jpg" alt="img27"/></div>
+                            <h4 class="gallery-text">Idea diagram</h4>
+                            <p class="gallery-text">Idea diagram for the master's thesis, thesis issues</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image28.jpg" alt="img28"/></div>
+                            <h4 class="gallery-text">Idea diagrams</h4>
+                            <p class="gallery-text">Idea diagrams providing an introduction to the thesis, in turn - problem statement, design process, checking</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image29.jpg" alt="img29"/></div>
+                            <h4 class="gallery-text">Project lifecycle action scheme</h4>
+                            <p class="gallery-text">Participatory design, project lifecycle action scheme, coursework for urban planning class, master's degree.</p>
+                        </div>
+
+                        <!-- Visualisations -->
+                        <div>
+                            <div class="gallery-img"><img src="images/image31.jpg" alt="img31"/></div>
+                            <h4 class="gallery-text">Underwater shelter</h4>
+                            <p class="gallery-text">Work carried out as part of the author's project for design studio, master's degree.</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image32.jpg" alt="img32"/></div>
+                            <h4 class="gallery-text">Underwater shelter</h4>
+                            <p class="gallery-text">Work carried out as part of the author's project for design studio, master's degree.</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image33.jpg" alt="img33"/></div>
+                            <h4 class="gallery-text">Underwater shelter</h4>
+                            <p class="gallery-text">Work carried out as part of the author's project for design studio, master's degree.</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image34.jpg" alt="img34"/></div>
+                            <h4 class="gallery-text">Nissan Figaro</h4>
+                            <p class="gallery-text"></span></p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image35.jpg" alt="img35"/></div>
+                            <h4 class="gallery-text">Working in a café</h4>
+                            <p class="gallery-text"></p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image36.jpg" alt="img36"/></div>
+                            <h4 class="gallery-text">Decorations on the table</h4>
+                            <p class="gallery-text"></p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image37.jpg" alt="img07"/></div>
+                            <h4 class="gallery-text">Ceramic Bottles</h4>
+                            <p class="gallery-text"></p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image38.jpg" alt="img08"/></div>
+                            <h4 class="gallery-text">The splash</h4>
+                            <p class="gallery-text"></p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image39.jpg" alt="img09"/></div>
+                            <h4 class="gallery-text">Living Room</h4>
+                            <p class="gallery-text"></p>
+                        </div>
+
+                        <!-- Computational design -->
+                        <div>
+                            <div class="gallery-img"><img src="images/image41.jpg" alt="img41"/></div>
+                            <h4 class="gallery-text">Using ML in Grasshopper</h4>
+                            <p class="gallery-text">Workshop work : Beyond Static - Exploring Machine Learning for adaptive geometries in expandable structures</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image42.jpg" alt="img42"/></div>
+                            <h4 class="gallery-text">Using ML in Grasshopper</h4>
+                            <p class="gallery-text">Workshop work : Beyond Static - Exploring Machine Learning for adaptive geometries in expandable structures</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image43.jpg" alt="img43"/></div>
+                            <h4 class="gallery-text">Using ML in Grasshopper</h4>
+                            <p class="gallery-text">Workshop work : Beyond Static - Exploring Machine Learning for adaptive geometries in expandable structures</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image44.jpg" alt="img44"/></div>
+                            <h4 class="gallery-text">The Hedgehog</h4>
+                            <p class="gallery-text">Digital fabrication practical coursework, master's degree.</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image45.jpg" alt="img45"/></div>
+                            <h4 class="gallery-text">The Hedgehog</h4>
+                            <p class="gallery-text">Digital fabrication practical coursework, master's degree.</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image46.jpg" alt="img46"/></div>
+                            <h4 class="gallery-text">The Hedgehog</h4>
+                            <p class="gallery-text">Digital fabrication practical coursework, master's degree.</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image47.jpg" alt="img47"/></div>
+                            <h4 class="gallery-text">The Cocoon - outside home office</h4>
+                            <p class="gallery-text">Capsule attached to a building, made within the experimental design studio, master's degree</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image48.jpg" alt="img48"/></div>
+                            <h4 class="gallery-text">The Cocoon - outside home office</h4>
+                            <p class="gallery-text">Capsule attached to a building, made within the experimental design studio, master's degree</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image47.jpg" alt="img07"/></div>
+                            <h4 class="gallery-text">The Cocoon - outside home office</h4>
+                            <p class="gallery-text">Capsule attached to a building, made within the experimental design studio, master's degree</p>
+                        </div>
+
+                        <!-- Branding -->
+                        <div>
+                            <div class="gallery-img"><img src="images/image51.jpg" alt="img51"/></div>
+                            <h4 class="gallery-text">Grind | Logo design contest entry | Runner</h4>
+                            <p class="gallery-text">Logo concept for a café/shop whose main product is artisan coffee and tea. They mainly import coffee and tea, but also want to import products that are not specifically beverages and are aimed at men.</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image52.jpg" alt="img52"/></div>
+                            <h4 class="gallery-text">Grafters | Logo design contest entry</h4>
+                            <p class="gallery-text">Logo concept for a café/shop whose main product is artisan coffee and tea. They mainly import coffee and tea, but also want to import products that are not specifically beverages and are aimed at men.</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image53.jpg" alt="img53"/></div>
+                            <h4 class="gallery-text">Grafters | Logo design contest entry</h4>
+                            <p class="gallery-text">Logo concept for a café/shop whose main product is artisan coffee and tea. They mainly import coffee and tea, but also want to import products that are not specifically beverages and are aimed at men.</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image54.jpg" alt="img54"/></div>
+                            <h4 class="gallery-text">Health Naturally | Logo design contest entry</h4>
+                            <p class="gallery-text">Logo for a company selling natural skincare products.</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image55.jpg" alt="img55"/></div>
+                            <h4 class="gallery-text">Grafters | Logo design contest entry</h4>
+                            <p class="gallery-text">Logo concept for a café/shop whose main product is artisan coffee and tea. They mainly import coffee and tea, but also want to import products that are not specifically beverages and are aimed at men.</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image56.jpg" alt="img56"/></div>
+                            <h4 class="gallery-text">Grafters | Logo design contest entry</h4>
+                            <p class="gallery-text">Logo concept for a café/shop whose main product is artisan coffee and tea. They mainly import coffee and tea, but also want to import products that are not specifically beverages and are aimed at men.</p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image57.jpg" alt="img57"/></div>
+                            <h4 class="gallery-text">Peak Capital | Logo design contest entry</h4>
+                            <p class="gallery-text"></p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image58.jpg" alt="img58"/></div>
+                            <h4 class="gallery-text">Architectural Company | Logo design contest entry</h4>
+                            <p class="gallery-text"></p>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image59.jpg" alt="img59"/></div>
+                            <h4 class="gallery-text">Architectural Company | Logo design contest entry</h4>
+                            <p class="gallery-text"></p>
+                        </div>
+
+                        <!-- Social media -->
+                        <div>
+                            <div class="gallery-img"><img src="images/image61.gif" alt="img61"/></div>
+                            <h4 class="gallery-text">Top 5 films about ecology</h4>
+                            <p class="gallery-text">Social media post, working for the Carbon Footprint Foundation.</p>
+                        </div>
+                        <!-- <div>
+                            <div class="gallery-img"><img src="images/image62.gif" alt="img62"/></div>
+                            <h4 class="gallery-text">Top 5 films about ecology</h4>
+                            <p class="gallery-text">Social media post, working for the Carbon Footprint Foundation.</p>
+                        </div> -->
+                        <div>
+                            <div class="gallery-img"><img src="images/image63.gif" alt="img63"/></div>
+                            <h4 class="gallery-text">Top 5 books about ecology</h4>
+                            <p class="gallery-text">Social media post, working for the Carbon Footprint Foundation.</p>
+                        </div>
+                        <!-- <div>
+                            <div class="gallery-img"><img src="images/image64.gif" alt="img64"/></div>
+                            <h4 class="gallery-text">Top 5 films about ecology</h4>
+                            <p class="gallery-text">Social media post, working for the Carbon Footprint Foundation.</p>
+                        </div> -->
+                        <div>
+                            <div class="gallery-img"><img src="images/image65.gif" alt="img65"/></div>
+                            <h4 class="gallery-text">Top 5 animated movies about ecology</h4>
+                            <p class="gallery-text">Social media post, working for the Carbon Footprint Foundation.</p>
+                        </div>
+                        <!-- <div>
+                            <div class="gallery-img"><img src="images/image66.gif" alt="img66"/></div>
+                            <h4 class="gallery-text">Top 5 films about ecology</h4>
+                            <p class="gallery-text">Social media post, working for the Carbon Footprint Foundation.</p>
+                        </div> -->
+                        <div>
+                            <div class="gallery-img"><img src="images/image67.gif" alt="img67"/></div>
+                            <h4 class="gallery-text">Top 5 films about ecology</h4>
+                            <p class="gallery-text">Social media post, working for the Carbon Footprint Foundation.</p>
+                        </div>
+                        <!-- <div>
+                            <div class="gallery-img"><img src="images/image68.gif" alt="img68"/></div>
+                            <h4 class="gallery-text">Top 5 films about ecology</h4>
+                            <p class="gallery-text">Social media post, working for the Carbon Footprint Foundation.</p>
+                        </div> -->
+                        <div>
+                            <div class="gallery-img"><img src="images/image69.gif" alt="img69"/></div>
+                            <h4 class="gallery-text">Top 5 organic restaurants</h4>
+                            <p class="gallery-text">Social media post, working for the Carbon Footprint Foundation.</p>
+                        </div>
+
+                        <!-- Photography -->
+                        <div>
+                            <div class="gallery-img"><img src="images/image71.jpg" alt="img71"/></div>
+                            <h4 class="gallery-text">The Guggenheim Museum, New York</h4>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image72.jpg" alt="img72"/></div>
+                            <h4 class="gallery-text">Hibernia Bank, San Francisco</h4>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image73.jpg" alt="img73"/></div>
+                            <h4 class="gallery-text">Ortaköy Mosque, Istanbul</h4>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image74.jpg" alt="img74"/></div>
+                            <h4 class="gallery-text">Palace of Culture and Science, Warsaw</h4>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image75.jpg" alt="img75"/></div>
+                            <h4 class="gallery-text">WTC Transportation Hub, New York</h4>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image76.jpg" alt="img76"/></div>
+                            <h4 class="gallery-text">Brooklyn Bridge, New York</h4>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image77.jpg" alt="img77"/></div>
+                            <h4 class="gallery-text">Seagram Building, New York</h4>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image78.jpg" alt="img78"/></div>
+                            <h4 class="gallery-text">Şirince</h4>
+                        </div>
+                        <div>
+                            <div class="gallery-img"><img src="images/image79.jpg" alt="img79"/></div>
+                            <h4 class="gallery-text">10 Aralık Şehitleri Parkı, Istanbul</h4>
+                        </div>
+                        <span class="loading"></span>
+                        <span class="icon close-content"></span>
                     </div>
-                </li>
-            </ul>
-        </nav>
-    </footer>   
-    <script type="text/javascript" src="./carousel.js"></script>
-</body>
+                </section>
+
+            </main>
+
+            <footer id="nav-footer">
+                <nav class="nav-footer">
+                    <ul class="nav-footer__list">
+                        <li class="nav-footer__list-item">
+                            <div class="nav-footer__social-icons">
+                                <a class="nav-footer__link" href="mailto:ag.thiel.arc@gmail.com">
+                                    <svg class="nav-footer__logo--small" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path   
+                                            d="M4 20q-.825 0-1.413-.588T2 18V6q0-.825.588-1.413T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.588 1.413T20 20H4Zm8-7.175q.125 0 .263-.038t.262-.112L19.6 8.25q.2-.125.3-.313t.1-.412q0-.5-.425-.75T18.7 6.8L12 11L5.3 6.8q-.45-.275-.875-.012T4 7.525q0 .25.1.438t.3.287l7.075 4.425q.125.075.263.113t.262.037Z"
+                                        />
+                                    </svg>
+                                </a>
+                                <a class="nav-footer__link" href="https://www.linkedin.com/in/agnieszka-thiel/">
+                                    <svg class="nav-footer__logo--small" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                                    </svg>
+                                </a>
+                                <a class="nav-footer__link" href="https://github.com/AgInsideOut/">
+                                    <svg class="nav-footer__logo--small" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </footer> 
+        </div><!-- /container -->   
+        
+        <script src="./js/graphics/classie.js"></script>
+        <script src="./js/graphics/helper.js"></script>
+        <script src="./js/graphics/grid3d.js"></script>
+        <script>
+            new grid3D( document.getElementById( 'grid3d' ) );
+        </script>
+        <script src="./js/graphics/sections.js"></script>      
+    </body>
 </html>

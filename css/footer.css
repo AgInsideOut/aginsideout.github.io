@@ -1,0 +1,71 @@
+/* CSS for the Footer */
+.nav-footer {
+    border-top: 2px solid black;
+	font-size: 12px;
+    font-weight: normal;
+    padding: 0 5%;
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 100%; */
+}
+.nav-footer__list {
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 100%;
+
+	padding-left: 0;
+    margin: 0;
+}
+.nav-footer__list-item {
+    align-self: center;
+
+	width: 92px;
+    text-align: center !important
+}
+.nav-footer__link {
+    text-decoration: none;
+    color: #000000;
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.nav-footer__link:active, .nav-footer__link:hover, .nav-footer__link:focus {
+    text-decoration: none;
+    color: #000000;
+}
+.nav-footer__link svg {
+    width: 32px;
+    height: 32px;
+    fill: #676767;
+    transition: fill 0.3s ease;
+}
+.nav-footer__link:hover svg {
+    fill: #000000;
+}
+.nav-footer__logo {
+    padding: 0px;
+    width: 69px;
+    height: auto;
+    margin: 0 auto;
+}
+.nav-footer__logo--small {
+    padding: 0px;
+    width: 32px;
+    height: auto;
+}
+.nav-footer__social-icons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+#nav-footer {
+	height: 80px;
+}
