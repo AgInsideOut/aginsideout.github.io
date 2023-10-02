@@ -166,7 +166,6 @@ section {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
-	/* column-gap: 50px; */
 	justify-items: center;
 	align-content: center;
 }
@@ -174,7 +173,6 @@ section {
 	width: 200px;
 	height: 200px;
 	text-align: center;
-	/* background-color: white; */
 	border: 1px solid #ccc;
 	display: flex;
 	align-items: center;
@@ -298,16 +296,6 @@ section {
 	z-index: 400;
 	-webkit-overflow-scrolling: touch;
 }
-/* .loading {
-	opacity: 0;
-	z-index: 1;
-	background: transparent url(../images/preloader.gif) no-repeat center center;
-	-webkit-transform: scale(0.5);
-	transform: scale(0.5);
-	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-	transition: opacity 0.5s, transform 0.5s;
-} */
-
 /* CSS for the Spinner */
 .loading {
 
@@ -318,7 +306,7 @@ section {
 	margin-bottom: auto;
 	height: 50%;
 	width: 20%;
-	opacity: 0;
+	opacity: 1;
 	z-index: 1;
 	
 	background: transparent url('../assets/logo-spin.png') no-repeat center center;
@@ -328,7 +316,6 @@ section {
 	transition: opacity 0.5s, transform 0.5s;
 	animation: spin 5s linear infinite;
 }
-
 @keyframes spin {
 	from {
 		transform: rotate(0deg);
@@ -337,13 +324,12 @@ section {
 		transform: rotate(360deg);
 	}
 } 
-
 .loading.show {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
-
+/* CSS for the Gallery Content */
 .content.show {
 	height: auto;
 	pointer-events: auto;
@@ -400,7 +386,6 @@ section {
 .close-content:before {
 	content: "\e602";
 }
-/* CSS for the gallery content */
 .gallery-img,
 .gallery-text {
 	max-width: 600px;
