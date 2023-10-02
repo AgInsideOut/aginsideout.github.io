@@ -392,7 +392,7 @@ a.web:hover svg.icon--web use {
 .content__indicator {
 	opacity: 0;
 }
-
+/* Project Content CSS */
 @media screen and (min-width: 55em) {
 	.frame {
 		display: grid;
