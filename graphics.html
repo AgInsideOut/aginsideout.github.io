@@ -15,51 +15,46 @@
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
         <link rel="manifest" href="../favicon_io/site.webmanifest">
     
-                
-        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-        <link rel="stylesheet" type="text/css" href="css/graphics.css" />
-        <link rel="stylesheet" type="text/css" href="css/styles.css" />
-
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/navbar.css" />
 		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
+        <link rel="stylesheet" type="text/css" href="css/devworks.css" />
+
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/graphics.css" />
+        
+        <script src="./js/overflow-menu/overflow-menu.js"></script>
         <script src="js/graphics/modernizr.custom.js"></script>
     </head>
 
     <body>
         <div class="container">
             
-            <header class="codrops-header">
-                    <nav class="nav">
-                        <ul class="nav__pages-list">
-                            <li class="nav__pages-list-item">
-                                <a class="nav__pages-link" href="index.html">HOME</a>
-                            </li>
-                            <li class="nav__pages-list-item">
-                                <a class="nav__pages-link" href="devworks.html">DEVWORKS</a>
-                            </li>
-                        </ul>
-                        <a class="nav__logo" href="index.html">
-                            <img class="nav__logo-img" href="index.html" src="./assets/logo.jpg" alt="Website Logo / Home Link">
+            <header>
+                <nav class="nav">
+                    <a class="nav__logo" href="index.html">
+                        <img class="nav__logo-img" href="index.html" src="./assets/logo.jpg" alt="Website Logo / Home Link">
+                    </a>
+                    <div class="topnav" id="myTopnav">
+                        <a href="index.html">HOME</a>
+                        <a href="devworks.html">DEVWORKS</a>
+                        <a href="architecture.html">ARCHITECTURE</a>
+                        <a class="active" href="graphics.html">GRAPHICS</a>
+                        <!-- <br /><br />
+                        <a href="#sketches">SKETCHES</a>
+                        <a href="#schemes">SCHEMES</a>
+                        <a href="#visualisations">VISUALISATIONS</a>
+                        <a href="#computational-design">COMPUTATIONAL DESIGN</a>
+                        <a href="#branding">BRANDING</a>
+                        <a href="#social-media">SOCIAL MEDIA</a>
+                        <a href="#photography">PHOTOGRAPHY</a> -->
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
                         </a>
-                        <ul class="nav__sections-list">
-                            <li class="nav__sections-list-item">
-                                <a class="nav__sections-link" href="architecture.html">ARCHITECTURE</a>
-                            </li>
-                            <li class="nav__sections-list-item">
-                                <a class="nav__sections-link" href="graphics.html">GRAPHICS</a>
-                            </li>
-                        </ul>
-
-                        <ul class="codrops-demos">
-                            <a href="#sketches">SKETCHES</a>
-                            <a href="#schemes">SCHEMES</a>
-                            <a href="#visualisations">VISUALISATIONS</a>
-                            <a href="#computational-design">COMPUTATIONAL DESIGN</a>
-                            <a href="#branding">BRANDING</a>
-                            <a href="#social-media">SOCIAL MEDIA</a>
-                            <a href="#photography">PHOTOGRAPHY</a>
-                        </ul>
-                    </nav>
+                    </div>
+                </nav>
             </header>
 
             <main class="main-gallery">             

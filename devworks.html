@@ -14,9 +14,12 @@
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
         <link rel="manifest" href="../favicon_io/site.webmanifest">
 
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/devworks.css" />
 		<link rel="stylesheet" type="text/css" href="css/navbar.css" />
 		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<script src="./js/overflow-menu/overflow-menu.js"></script>
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
 	
@@ -46,29 +49,22 @@
 		</svg>
 
 		<div class="container">
-			<header class="codrops-header">
-				<nav class="nav">
-					<ul class="nav__pages-list">
-						<li class="nav__pages-list-item">
-							<a class="nav__pages-link" href="index.html">HOME</a>
-						</li>
-						<li class="nav__pages-list-item">
-							<a class="nav__pages-link" href="devworks.html">DEVWORKS</a>
-						</li>
-					</ul>
-					<a class="nav__logo" href="index.html">
-						<img class="nav__logo-img" href="index.html" src="./assets/logo.jpg" alt="Website Logo / Home Link">
-					</a>
-					<ul class="nav__sections-list">
-						<li class="nav__sections-list-item">
-							<a class="nav__sections-link" href="architecture.html">ARCHITECTURE</a>
-						</li>
-						<li class="nav__sections-list-item">
-							<a class="nav__sections-link" href="graphics.html">GRAPHICS</a>
-						</li>
-					</ul>
-				</nav>
-			</header>
+			<header>
+                <nav class="nav">
+                    <a class="nav__logo" href="index.html">
+                        <img class="nav__logo-img" href="index.html" src="./assets/logo.jpg" alt="Website Logo / Home Link">
+                    </a>
+                    <div class="topnav" id="myTopnav">
+                        <a href="index.html">HOME</a>
+                        <a class="active" href="devworks.html">DEVWORKS</a>
+                        <a href="architecture.html">ARCHITECTURE</a>
+                        <a href="graphics.html">GRAPHICS</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </nav>
+            </header>
 		</div>
 
 		<main class="main-devworks">
