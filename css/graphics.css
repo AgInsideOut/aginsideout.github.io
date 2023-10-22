@@ -297,8 +297,7 @@ section {
 	-webkit-overflow-scrolling: touch;
 }
 /* CSS for the Spinner */
-.loading {
-
+/* .loading {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -308,14 +307,13 @@ section {
 	width: 20%;
 	opacity: 1;
 	z-index: 1;
-	
 	background: transparent url('../assets/logo-spin.png') no-repeat center center;
 	-webkit-transform: scale(0.5);
 	transform: scale(0.5);
 	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
 	transition: opacity 0.5s, transform 0.5s;
 	animation: spin 5s linear infinite;
-}
+} */
 @keyframes spin {
 	from {
 		transform: rotate(0deg);
