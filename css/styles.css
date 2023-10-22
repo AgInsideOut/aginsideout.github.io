@@ -75,7 +75,7 @@ a {
 	color: inherit;
 }
 
-/* CSS for the Portfolio Page */
+/* CSS for the portfolio page */
 .main-portfolio {
     height: 80%;
     width: auto;
@@ -83,21 +83,24 @@ a {
 .portfolio {
     padding: 2% 5% 2%;
     background: #ffffff;
-    height: 752px; /* Initial height */
+    width: 100vw; /* Set width to 100% of the viewport width */
+    height: calc(100vw * 752 / 1152); /* Set height based on width, maintaining A4 proportions (1152x752) */
+    max-height: 752px; /* Set maximum height if necessary */
     overflow: auto;
 }
 #flipbook {
-    width: 100%; /* Make the flipbook container fill its parent */
-    max-width: 960px; /* Maximum width */
-    height: 100%; /* Initial height = 100%, maintaining the aspect ratio */
+    width: 100%; /* Create a flipbook container that fills its parent */
+    height: 100%; /* Create a flipbook container that fills its parent */
+    max-width: 1152px; /* Set maximum width if necessary */
+    max-height: 752px; /* Set maximum height if necessary */
     margin: 0 auto;
     position: relative;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 #flipbook .page {
     position: absolute;
-    width: 100%; /* Make the pages fill the flipbook container */
-    height: 100%; /* Make the pages fill the flipbook container */
+    width: 100%; /* Set page width to 100% of the flipbook container */
+    height: 100%; /* Set page height to 100% of the flipbook container */
     background-size: cover;
 }
 #flipbook .turn-page {
@@ -108,20 +111,12 @@ a {
 /* Apply responsive styles for smaller screens */
 @media screen and (max-width: 1200px) {
     .portfolio {
-        height: 600px; /* Adjust the height for smaller screens */
-    }
-
-    #flipbook {
-        max-width: 960px; /* Adjust the maximum width for smaller screens */
+        height: calc(100vw * 752 / 1152); /* Set height to 100% of viewport width, maintaining A4 proportions */
     }
 }
 
 @media screen and (max-width: 768px) {
     .portfolio {
-        height: 400px; /* Further adjust the height for even smaller screens */
-    }
-
-    #flipbook {
-        max-width: 480px; /* Further adjust the maximum width for smaller screens */
+        height: calc(100vw * 752 / 1152); /* Set height to 100% of viewport width, maintaining A4 proportions */
     }
 }
