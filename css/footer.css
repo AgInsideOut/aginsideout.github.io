@@ -1,9 +1,22 @@
+/* Define a base font size on the <html> element for easy rem calculations */
+html {
+    font-size: 16px;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
 /* CSS for the Footer */
 .nav-footer {
     border-top: 2px solid black;
-	font-size: 12px;
+	font-size: 1.5em;
     font-weight: normal;
     padding: 0 5%;
+}
+.nav-footer .nav-footer__social-icons .footer-icon {
+    fill: #676767;
+    transition: fill 0.3s ease;
 }
 .nav-footer__list {
     list-style: none;
@@ -12,15 +25,11 @@
     display: flex;
     justify-content: space-evenly;
     align-items: stretch;
-    height: 100%;
-
 	padding-left: 0;
     margin: 0;
 }
 .nav-footer__list-item {
     align-self: center;
-
-	width: 92px;
     text-align: center !important
 }
 .nav-footer__link {
@@ -30,15 +39,22 @@
 	display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
 .nav-footer__link:active, .nav-footer__link:hover, .nav-footer__link:focus {
     text-decoration: none;
     color: #000000;
 }
+.nav-footer__link {
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-footer__link svg {
-    width: 32px;
-    height: 32px;
+    height: 1em;
+	width: auto;
     fill: #676767;
     transition: fill 0.3s ease;
 }
@@ -53,7 +69,7 @@
 }
 .nav-footer__logo--small {
     padding: 0px;
-    width: 32px;
+    width: 2em;
     height: auto;
 }
 .nav-footer__social-icons {
@@ -62,6 +78,18 @@
     gap: 4rem;
     justify-content: center;
 }
-#nav-footer {
-	height: 80px;
+.nav-footer {
+	height: 2em;
+}
+.footer-icon {
+    height: 0.5em;
+    width: auto;
+    fill: #676767;
+    transition: fill 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-icon {
+        height: 2em;
+    }
 }
