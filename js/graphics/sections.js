@@ -12,7 +12,8 @@ var sectionLinks = {
 // After clicking on the navigation link
 document.querySelectorAll('.topnav a').forEach(function(link) {
     link.addEventListener('click', function(event) {
-        event.preventDefault();
+        // Do not prevent the default behavior (page navigation)
+        // event.preventDefault();
 
         // Get the section ID from the link's href attribute
         var sectionId = link.getAttribute('href').substring(1);

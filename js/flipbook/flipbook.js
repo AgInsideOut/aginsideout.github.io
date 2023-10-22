@@ -43,7 +43,7 @@ $(document).ready(function() {
     });
 
     function showNavigationInfo() {
-        alert("Press → on your keyboard to navigate through pages");
+        alert("Navigate pages with → key or click/drag corners.");
     }
 });
 
