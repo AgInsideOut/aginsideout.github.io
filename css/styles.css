@@ -63,9 +63,6 @@ body {
 main{
 	margin-top: -1%;
 }
-.main-portfolio {
-	margin-top: +4%;
-}
 p {
 	font-size: 26px;
 	margin: 0;
@@ -77,99 +74,54 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
-/* CSS for the Header */
-.header {
-	padding: 0 5%;
-	background: url("../assets/image-back.png") 0% 50%/cover no-repeat;
-	height: calc(100vh - 80px);
-}
-.header__container {
-	padding: 0 5%;
-	width: 90%;
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	justify-content: center;
-}
-.header__title {
-	font-family: Futura, "futura-pt", sans-serif;
-	font-size: 36px;
-	font-weight: normal;
-	text-transform: uppercase;
-	margin: 0;
-}
-.header__copy, .header__tagline, .header__copy--lighter, .header__copy--bold {
-	width: 50%;
-	font-family: Futura, "futura-pt", sans-serif;
-	font-size: 20px;
-	margin: 0 10%;
-	text-align: justify;
-}
-.header__copy--lighter {
-	font-weight: lighter;
-	font-size: 15px;
-	line-height: 1.6 !important;
-}
-.header__copy--bold {
-	font-weight: bold;
-}
-.header__copy, .header__copy--lighter {
-	margin: 0 0 50px;
-}
-.header__tagline {
-	margin: 0;
-}
-.tagline {
-	font-weight: lighter;
-	font-size: 18px !important;
-	line-height: 1.25 !important;
-}
-.tagline p {
-    margin: 0;
-}
-.tagline span {
-	display: block;
-	font-weight: bold;
-	text-transform: uppercase;
-	margin-top: 20px;
-}
-mark {
-	-webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
-			animation: 1.5s highlight 1.5s 1 normal forwards;
-	background-color: none;
-	background: linear-gradient(90deg, #8b7eff 50%, rgba(255, 255, 255, 0) 50%);
-	background-size: 200% 100%;
-	background-position: 100% 0;
-}
-@-webkit-keyframes highlight {
-	to {
-		background-position: 0 0;
-	}
-}
-@keyframes highlight {
-	to {
-		background-position: 0 0;
-	}
-}
+
 /* CSS for the Portfolio Page */
+.main-portfolio {
+    height: 80%;
+    width: auto;
+}
 .portfolio {
-    padding: 5% 5% 5%;
+    padding: 2% 5% 2%;
     background: #ffffff;
-    height: 752px;
+    height: 752px; /* Initial height */
     overflow: auto;
 }
-
 #flipbook {
-    width: 1152px;
-    height: 120%;
+    width: 100%; /* Make the flipbook container fill its parent */
+    max-width: 960px; /* Maximum width */
+    height: 100%; /* Initial height = 100%, maintaining the aspect ratio */
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-
+#flipbook .page {
+    position: absolute;
+    width: 100%; /* Make the pages fill the flipbook container */
+    height: 100%; /* Make the pages fill the flipbook container */
+    background-size: cover;
+}
 #flipbook .turn-page {
     background-color: #ccc;
     background-size: 100% 100%;
+}
+
+/* Apply responsive styles for smaller screens */
+@media screen and (max-width: 1200px) {
+    .portfolio {
+        height: 600px; /* Adjust the height for smaller screens */
+    }
+
+    #flipbook {
+        max-width: 960px; /* Adjust the maximum width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio {
+        height: 400px; /* Further adjust the height for even smaller screens */
+    }
+
+    #flipbook {
+        max-width: 480px; /* Further adjust the maximum width for smaller screens */
+    }
 }
