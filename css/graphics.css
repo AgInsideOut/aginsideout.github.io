@@ -17,6 +17,10 @@
 	margin-top: +2%;
 }
 
+.hidden {
+	display: none;
+}
+
 body {
 	background: #ffffff;
 	color: #000000;

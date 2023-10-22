@@ -10,7 +10,7 @@ var sectionLinks = {
 };
 
 // After clicking on the navigation link
-document.querySelectorAll('.codrops-demos a').forEach(function(link) {
+document.querySelectorAll('.topnav a').forEach(function(link) {
     link.addEventListener('click', function(event) {
         event.preventDefault();
 
