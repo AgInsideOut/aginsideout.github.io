@@ -49,12 +49,20 @@
 		var self = this;
 		
 		// open the content element when clicking on the main grid items
-		this.gridItems.forEach( function( item ) {
-			item.addEventListener( 'click', function() {
-				var index = item.getAttribute('data-index');
-				self._showContent( index );
-			} );
-		} );
+		// this.gridItems.forEach( function( item ) {
+		// 	item.addEventListener( 'click', function() {
+		// 		var index = item.getAttribute('data-index');
+		// 		self._showContent( index );
+		// 	} );
+		// } );
+
+		this.gridItems.forEach(function (item) {
+			item.addEventListener('click', function () {
+				var index = parseInt(item.getAttribute('data-index'), 10); // Parse the data-index as an integer
+				self._showContent(index);
+			});
+		});
+		
 
 		// close the content element
 		this.close.addEventListener( 'click', function() {
@@ -84,6 +92,7 @@
 	// in the end of the animation the content is shown
 	// a loading indicator will appear for 1 second to simulate a loading period
 	grid3D.prototype._showContent = function( index ) {
+		console.log('Showing content for index: ', index);
 		if( this.isAnimating ) {
 			return false;
 		}
