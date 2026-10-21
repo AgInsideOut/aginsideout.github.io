@@ -28,7 +28,7 @@
 		// grid element
 		this.grid = this.gridWrap.querySelector( 'div.grid' );
 		// main grid items
-		this.gridItems = [].slice.call( this.grid.children );
+		this.gridItems = [].slice.call( this.grid.querySelectorAll( 'figure' ) );
 		// default sizes for grid items
 		this.itemSize = { width : this.gridItems[0].offsetWidth, height : this.gridItems[0].offsetHeight };
 		// content
